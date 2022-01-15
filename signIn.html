@@ -87,6 +87,8 @@
 		let data_api = `https://masai-api-mocker.herokuapp.com/user/${username}`
 
 		let response = await fetch(data_api , {
+			mode:'cors',
+			Access-Control-Allow-Origin: *,
 			headers:{
 				"Content-Type":"application/json" ,
 				Authorization: `Bearer ${token}`
