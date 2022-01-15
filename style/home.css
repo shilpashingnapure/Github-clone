@@ -25,6 +25,7 @@ body{
 	background-color: #fff;
 	color:#24292f;
 	background-image: none;
+	overflow:auto;
 }
 .form_page{
 	display: flex;
