@@ -62,7 +62,8 @@
 			method : "POST" ,
 			body:login_data ,
 			headers:{
-				"Content-Type":"application/json"
+				"Content-Type":"application/json",
+				"Access-Control-Allow-Origin":"*"
 			}
 
 		})
@@ -89,6 +90,7 @@
 		let response = await fetch(data_api , {
 			headers:{
 				"Content-Type":"application/json" ,
+				"Access-Control-Allow-Origin":"*",
 				"Authorization": `Bearer ${token}`
 
 			}
