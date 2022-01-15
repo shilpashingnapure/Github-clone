@@ -57,9 +57,9 @@
 			console.log(err)
 		}
 
-		let log_api = `https://masai-api-mocker.herokuapp.com/auth/login`
+		let log_api = `https://masai-api-mocker.herokuapp.com/auth/login/allow-cors`
 		let response = await fetch(log_api , {
-			mode:"no-cors",
+			mode:"cors",
 			'Access-Control-Allow-Origin':"*",
 			method : "POST" ,
 			body:login_data ,
@@ -86,10 +86,10 @@
 
 
 	async function getData(username , token){
-		let data_api = `https://masai-api-mocker.herokuapp.com/user/${username}`
+		let data_api = `https://masai-api-mocker.herokuapp.com/user/${username}/allow-cors`
 
 		let response = await fetch(data_api , {
-			mode:"no-cors",
+			mode:"cors",
 			'Access-Control-Allow-Origin':"*",
 			headers:{
 				"Content-Type":"application/json" ,
