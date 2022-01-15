@@ -59,6 +59,8 @@
 
 		let log_api = `https://masai-api-mocker.herokuapp.com/auth/login`
 		let response = await fetch(log_api , {
+			mode:"no-cors",
+			'Access-Control-Allow-Origin':"*",
 			method : "POST" ,
 			body:login_data ,
 			headers:{
@@ -88,6 +90,7 @@
 
 		let response = await fetch(data_api , {
 			mode:"no-cors",
+			'Access-Control-Allow-Origin':"*",
 			headers:{
 				"Content-Type":"application/json" ,
 				"Authorization": `Bearer ${token}`
