@@ -12,4 +12,4 @@
 * search profile
 * sign/sign up
 
-[Try Live](https://shilpashingnapure.github.io/Github-clone/)
+[Try Live](https://clone-of-github.netlify.app/)
